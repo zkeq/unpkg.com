@@ -6,7 +6,7 @@ async function run(rayId) {
     return 1;
   }
 
-  const zone = await getZone('unpkg.com');
+  const zone = await getZone('unpkg.onmicrosoft.cn');
   const entry = await getLog(zone.id, rayId);
 
   console.log(entry || 'NOT FOUND');

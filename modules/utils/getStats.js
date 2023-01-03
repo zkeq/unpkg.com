@@ -25,7 +25,7 @@ function extractPublicInfo(data) {
   };
 }
 
-const DomainNames = ['unpkg.com', 'npmcdn.com'];
+const DomainNames = ['unpkg.onmicrosoft.cn', 'npmcdn.com'];
 
 export default async function getStats(since, until) {
   const zones = await getZones(DomainNames);

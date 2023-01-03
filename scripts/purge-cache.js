@@ -39,17 +39,17 @@ async function purgeCache(packageName, version) {
   );
 
   let urls = files.map(
-    file => `https://unpkg.com/${packageName}@${version}${file.path}`
+    file => `https://unpkg.onmicrosoft.cn/${packageName}@${version}${file.path}`
   );
 
   if (version === 'latest') {
     // Purge the URL w/out the "@latest" too.
     urls = urls.concat(
-      files.map(file => `https://unpkg.com/${packageName}${file.path}`)
+      files.map(file => `https://unpkg.onmicrosoft.cn/${packageName}${file.path}`)
     );
   }
 
-  return getZone('unpkg.com').then(zone => {
+  return getZone('unpkg.onmicrosoft.cn').then(zone => {
     let promise = Promise.resolve();
 
     groupBy(urls, 30).forEach(group => {

@@ -153,7 +153,7 @@ export default function App() {
                 padding: '5px 0'
               }}
             >
-              unpkg.com/:package@:version/:file
+              unpkg.onmicrosoft.cn/:package@:version/:file
             </div>
 
             {hasStats && <Stats data={stats} />}
@@ -168,12 +168,12 @@ export default function App() {
           <ul>
             <li>
               <Link href="/react@16.7.0/umd/react.production.min.js">
-                unpkg.com/react@16.7.0/umd/react.production.min.js
+                unpkg.onmicrosoft.cn/react@16.7.0/umd/react.production.min.js
               </Link>
             </li>
             <li>
               <Link href="/react-dom@16.7.0/umd/react-dom.production.min.js">
-                unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js
+                unpkg.onmicrosoft.cn/react-dom@16.7.0/umd/react-dom.production.min.js
               </Link>
             </li>
           </ul>
@@ -189,12 +189,12 @@ export default function App() {
           <ul>
             <li>
               <Link href="/react@^16/umd/react.production.min.js">
-                unpkg.com/react@^16/umd/react.production.min.js
+                unpkg.onmicrosoft.cn/react@^16/umd/react.production.min.js
               </Link>
             </li>
             <li>
               <Link href="/react/umd/react.production.min.js">
-                unpkg.com/react/umd/react.production.min.js
+                unpkg.onmicrosoft.cn/react/umd/react.production.min.js
               </Link>
             </li>
           </ul>
@@ -207,10 +207,10 @@ export default function App() {
 
           <ul>
             <li>
-              <Link href="/jquery">unpkg.com/jquery</Link>
+              <Link href="/jquery">unpkg.onmicrosoft.cn/jquery</Link>
             </li>
             <li>
-              <Link href="/three">unpkg.com/three</Link>
+              <Link href="/three">unpkg.onmicrosoft.cn/three</Link>
             </li>
           </ul>
 
@@ -221,10 +221,10 @@ export default function App() {
 
           <ul>
             <li>
-              <Link href="/react/">unpkg.com/react/</Link>
+              <Link href="/react/">unpkg.onmicrosoft.cn/react/</Link>
             </li>
             <li>
-              <Link href="/react-router/">unpkg.com/react-router/</Link>
+              <Link href="/react-router/">unpkg.onmicrosoft.cn/react-router/</Link>
             </li>
           </ul>
 
