@@ -2,7 +2,7 @@ import babel from '@babel/core';
 
 import unpkgRewrite from '../plugins/unpkgRewrite.js';
 
-const origin = process.env.ORIGIN || 'https://unpkg.onmicrosoft.cn';
+const origin = process.env.ORIGIN || 'https://npm.onmicrosoft.cn';
 
 export default function rewriteBareModuleIdentifiers(code, packageConfig) {
   const dependencies = Object.assign(

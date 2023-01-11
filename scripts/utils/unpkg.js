@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 
 function getMetadata(packageName, version) {
-  return fetch(`https://unpkg.onmicrosoft.cn/${packageName}@${version}/?meta`, {
+  return fetch(`https://npm.onmicrosoft.cn/${packageName}@${version}/?meta`, {
     method: 'GET'
   }).then(res => res.json());
 }

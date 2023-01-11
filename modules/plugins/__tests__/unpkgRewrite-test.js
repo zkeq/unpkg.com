@@ -5,20 +5,20 @@ import unpkgRewrite from '../unpkgRewrite.js';
 const testCases = [
   {
     before: 'import React from "react";',
-    after: 'import React from "https://unpkg.onmicrosoft.cn/react@15.6.1?module";'
+    after: 'import React from "https://npm.onmicrosoft.cn/react@15.6.1?module";'
   },
   {
     before: 'import router from "@angular/router";',
     after:
-      'import router from "https://unpkg.onmicrosoft.cn/@angular/router@4.3.5?module";'
+      'import router from "https://npm.onmicrosoft.cn/@angular/router@4.3.5?module";'
   },
   {
     before: 'import map from "lodash.map";',
-    after: 'import map from "https://unpkg.onmicrosoft.cn/lodash.map@4.6.0?module";'
+    after: 'import map from "https://npm.onmicrosoft.cn/lodash.map@4.6.0?module";'
   },
   {
     before: 'import fs from "pn/fs";',
-    after: 'import fs from "https://unpkg.onmicrosoft.cn/pn@1.0.0/fs?module";'
+    after: 'import fs from "https://npm.onmicrosoft.cn/pn@1.0.0/fs?module";'
   },
   {
     before: 'import cupcakes from "./cupcakes";',
@@ -42,15 +42,15 @@ const testCases = [
   },
   {
     before: 'export React from "react";',
-    after: 'export React from "https://unpkg.onmicrosoft.cn/react@15.6.1?module";'
+    after: 'export React from "https://npm.onmicrosoft.cn/react@15.6.1?module";'
   },
   {
     before: 'export { Component } from "react";',
-    after: 'export { Component } from "https://unpkg.onmicrosoft.cn/react@15.6.1?module";'
+    after: 'export { Component } from "https://npm.onmicrosoft.cn/react@15.6.1?module";'
   },
   {
     before: 'export * from "react";',
-    after: 'export * from "https://unpkg.onmicrosoft.cn/react@15.6.1?module";'
+    after: 'export * from "https://npm.onmicrosoft.cn/react@15.6.1?module";'
   },
   {
     before: 'export var message = "hello";',
@@ -62,11 +62,11 @@ const testCases = [
   },
   {
     before: 'import("react");',
-    after: 'import("https://unpkg.onmicrosoft.cn/react@15.6.1?module");'
+    after: 'import("https://npm.onmicrosoft.cn/react@15.6.1?module");'
   }
 ];
 
-const origin = 'https://unpkg.onmicrosoft.cn';
+const origin = 'https://npm.onmicrosoft.cn';
 const dependencies = {
   react: '15.6.1',
   '@angular/router': '4.3.5',
