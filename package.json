@@ -77,8 +77,5 @@
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-url": "^2.1.0",
     "supertest": "^3.0.0"
-  },
-  "engines": {
-    "node": "18"
   }
 }
